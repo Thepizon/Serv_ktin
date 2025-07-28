@@ -2,9 +2,9 @@
 name = "ktin-serv"
 version = "0.1.0"
 description = ""
-authors = ["Ktin"]
+authors = ["Quentin Remacle <quentinremacle05@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.13"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.13"
@@ -14,5 +14,5 @@ flask-bcrypt = ">=1.0.1,<2.0.0"
 python-dotenv = ">=1.1.1,<2.0.0"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
