@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='src/css/ktin.css')}}">
+
+</head>
+
+<body>
+
+    <header>
+
+        <ul class="menu">
+
+            <li><a href="{{ url_for('home')}}">Home</a></li>
+            <li><a href="{{ url_for('admin')}}">Admin</a></li>
+            <li><a href="{{ url_for('logout')}}">Logout</a></li>
+
+        </ul>
+
+    </header>
+
+    <main>
+        <div class="dashboard">
+
+            <div class="form">
+                <h2>Add User</h2>
+                <form method="POST" action="/add">
+                    <label for="username">name</label>
+                    <input type="text" name="username" id="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <div class="msg">{{ msg }}</div>
+				    <input type="submit" value="Add">
+                </form>
+            </div>
+
+            <div class="form">
+                <h2>Delete user</h2>
+                    <form method="POST" action="/del">
+                        <label for="username">name</label>
+                        <input type="text" name="username" id="username" required>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                        <div class="msg">{{ msg }}</div>
+                        <input type="submit" value="Delete">
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Made by Ktin</p>
+    </footer>
+    <script src="{{ url_for('static', filename='src/script/script.js') }}"></script>
+</body>
+</html>

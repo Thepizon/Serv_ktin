@@ -1,0 +1,314 @@
+@font-face {
+  font-family: 'RaceSport';
+  src: url('../fonts/Race\ Sport.ttf') format('truetype');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+html { 
+    color-scheme: light dark; 
+}
+
+header {
+    background-color: darkblue;
+    width: 100%;
+    margin: auto;
+    color: black;
+}
+
+header p{
+    font-family: 'RaceSport';
+    color: white;
+    text-overflow: clip;
+    font-size: 200%;
+    text-align: center;
+    padding: 10, 20;
+}
+
+
+main {
+    background-color: aliceblue;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex: 1;
+}
+
+footer {
+
+    background-color: darkgray;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.menu li {
+    font-family: 'RaceSport';
+    color: white;
+    text-overflow: clip;
+    font-size: 200%;
+    padding: 10px 20px;
+}
+
+.menu a {
+    font-family: 'RaceSport';
+    color: white;
+    text-overflow: clip;
+    text-decoration: none;
+}
+
+div.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    place-items: center;
+    justify-items: center;
+  grid-auto-rows: 1fr;
+}
+
+
+div.case {
+    display: flex;
+  flex-direction: column;
+  aspect-ratio: 300 / 150;
+  width: 100%;
+  border: 5px paleturquoise solid;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  overflow: hidden;
+}
+
+div.form {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 300 / 150;
+    width: 100%;
+    border: 5px paleturquoise solid;
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+
+}
+
+div.button {
+    aspect-ratio: 300 / 150;
+    max-width: calc((100% - 15px) / 2);;
+    width: 100%;
+    border: 5px paleturquoise solid;
+    border-radius: 25px;
+    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: span 2;
+}
+
+div.button img.button {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: transform 0.2s ease;
+}
+
+.button button {
+    all: unset;
+    cursor: pointer;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+button:active {
+    transform: scale(0.9);
+    filter: brightness(0.9);
+}
+
+.data {
+    font-family: 'RaceSport';
+    font-size: 800%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5cqw;
+}
+
+.state {
+    font-family: 'RaceSport';
+    font-size: 5cqw;
+     margin-top: auto;
+    margin-bottom: auto;
+}
+
+h2 {
+    font-family: 'RaceSport';
+}
+
+label {
+    font-family: 'RaceSport';
+}
+
+p.data {
+  width: 100%;
+  height: 100%;
+  font-size: 6cqw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: solid darkblue 2px;
+  font-family: 'RaceSport';
+  text-align: center;
+  background-color: aliceblue;
+
+}
+
+button[type="submit"] {
+  all: unset;
+  background: darkblue;
+  color: white;
+  padding: 10px 20px;
+  font-family: 'RaceSport';
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button[type="submit"]:hover {
+  background-color: navy;
+}
+
+
+/* Centrage de la page */
+main.loggin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e8f0f5;
+}
+
+/* Boîte du formulaire */
+.login {
+  background-color: #ffffff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Titre */
+.login h1 {
+  margin-bottom: 25px;
+  font-size: 2.2em;
+  color: #001f3f;
+  font-family: 'RaceSport', sans-serif;
+}
+
+/* Champs de saisie */
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  border: 2px solid #001f3f;
+  border-radius: 10px;
+  font-size: 1em;
+  font-family: 'RaceSport', sans-serif;
+  background-color: #f9f9f9;
+  transition: 0.2s;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+  border-color: #0074cc;
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px rgba(0, 116, 204, 0.2);
+}
+
+/* Bouton */
+.login input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #001f3f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.login input[type="submit"]:hover {
+  background-color: #0074cc;
+}
+
+/* Message d’erreur */
+.login .msg {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 15px;
+}

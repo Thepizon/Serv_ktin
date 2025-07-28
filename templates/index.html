@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Le serveur à Ktin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='src/css/ktin.css')}}">
+
+</head>
+
+<body>
+
+  <header>
+
+    <ul class="menu">
+      <li><a href="{{ url_for('home')}}">Home</a></li>
+      <li><a href="{{ url_for('admin')}}">Admin</a></li>
+      <li><a href="{{ url_for('logout')}}">Logout</a></li>
+    </ul>
+
+  </header>
+
+  <main>
+
+    <div class="dashboard">
+
+      <div class="case">
+        <h2>State</h2>
+        <p class="state" id="status"></p>
+      </div>
+
+      <div class="case">
+        <h2>Tailscale Interface</h2>
+        <p class="state" id="vpn"></p>
+      </div>
+
+      <div class="case">
+        <h2>CPU Temp</h2>
+        <p class="data" id="cpu">...</p>
+      </div>
+
+      <div class="case">
+        <h2>RAM Use</h2>
+        <p class="data" id="ram">...</p>
+      </div>
+
+      <div class="button">
+        <button id="on">
+          <img class="button" src="../static/src/images/on.png">
+        </button>
+      </div>
+
+    </div>
+  
+  </main>
+
+  <footer>
+    <p>Made by Ktin</p>
+  </footer>
+<script src="{{ url_for('static', filename='src/script/script.js') }}"></script>
+
+</body>
+</html>
