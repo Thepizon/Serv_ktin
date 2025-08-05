@@ -114,7 +114,6 @@ def del_db():
     msg = ''
     username = request.form['username']
     password = request.form['password']
-    #hash du mdp
 
     #check le compte
     cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
